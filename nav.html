@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        :root {
+            --main-background-color: #fff;
+            --nav-hover-color: #eaeaea;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 1px solid red; */
+            background-color: #000;
+            /* overflow: hidden; */
+        }
+
+        nav>a,
+        nav .dropdown>a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            padding: 14px 30px;
+            transition: 0.3s;
+            /* border: 1px solid red; */
+        }
+
+        nav i {
+            color: #fff;
+        }
+
+        nav>a:hover,
+        nav .dropdown>a:hover {
+            background-color: var(--nav-hover-color);
+            color: #000;
+        }
+
+        nav>.dropdown {
+            position: relative;
+            /* background-color: red; */
+        }
+
+        /* nav .dropdown>a {
+            color: #fff;
+            text-decoration: none;
+        } */
+
+        nav .product-dropdown {
+            display: none;
+            position: absolute;
+            /* display: flex; */
+            flex-direction: column;
+            width: max-content;
+            top: 35px;
+            left: 0;
+            background-color: #000;
+            /* border: 1px solid #000; */
+        }
+
+        nav .dropdown .product-dropdown a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 150px 10px 30px;
+        }
+
+        nav .dropdown .product-dropdown a:hover {
+            color: #000;
+            background-color: #fff;
+        }
+
+        nav .dropdown:hover .product-dropdown {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="dropdown">
+            <a href="#">Products <i class='bx bx-chevron-down'></i></a>
+            <div class="product-dropdown">
+                <a href="#">First product</a>
+                <a href="#">Second product</a>
+                <a href="#">Third product</a>
+                <a href="#">Fourth product</a>
+                <a href="#">Fifth product</a>
+            </div>
+        </div>
+        <a href="#">Help</a>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="widget-svg">
+          <g id="widget icons-FINAL_widget-hover 1">
+            <path id="background" d="M23.2 8.9L18.2 1H12.3H6.79999L0.799988 10.6L4.49999 16.6L1.99999 23L7.89999 20.2H18.2L23.2 12.3L20.9 10.6L23.2 8.9Z" fill="white"></path>
+            <g id="ebanqo-button-dots">
+              <path id="ebanqo-button-dot-1" class="ebanqo-button-dot" d="M8.25 12.5C8.94036 12.5 9.5 11.9404 9.5 11.25C9.5 10.5596 8.94036 10 8.25 10C7.55964 10 7 10.5596 7 11.25C7 11.9404 7.55964 12.5 8.25 12.5Z" fill="black" style="fill: rgb(237, 13, 127);"></path>
+              <path id="ebanqo-button-dot-2" class="ebanqo-button-dot" d="M12.25 12.5C12.9404 12.5 13.5 11.9404 13.5 11.25C13.5 10.5596 12.9404 10 12.25 10C11.5596 10 11 10.5596 11 11.25C11 11.9404 11.5596 12.5 12.25 12.5Z" fill="black" style="fill: rgb(237, 13, 127);"></path>
+              <path id="ebanqo-button-dot-3" class="ebanqo-button-dot" d="M16.55 12.5C17.2403 12.5 17.8 11.9404 17.8 11.25C17.8 10.5596 17.2403 10 16.55 10C15.8596 10 15.3 10.5596 15.3 11.25C15.3 11.9404 15.8596 12.5 16.55 12.5Z" fill="black" style="fill: rgb(237, 13, 127);"></path>
+            </g>
+          </g>
+        </svg>
