@@ -17,17 +17,14 @@ body {
 .top-section .top-banner img {
     /* height: 100%; */
     width: 100%;
-    /* border-color: red; */
-    /* box-sizing: border-box; */
-    /* border: none; */
-    /* border: 1px solid #9a0052; */
 }
 .top-section .top-upper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
-    height: 35px;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    min-height: 35px;
 }
 .top-section .top-upper a {
     margin: 0 23px;
@@ -142,7 +139,7 @@ body {
 
 /* ================= NAV TWO =================== */
 .top-section .nav-two {
-    height: 41px;
+    min-height: 41px;
     padding: 0 5%;
     background-color: #94004f;
     display: flex;
@@ -344,8 +341,14 @@ main .all-products .card > * {
     color: #fff;
 }
 
+/* ====================== FOOTER SECTION ====================== */
+
+footer {
+    overflow: hidden;
+}
 footer .footer-one {
-    height: 75px;
+    min-height: 75px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,9 +358,10 @@ footer .footer-one ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 25px;
     color: #fff;
     list-style: none;
+    flex-wrap: wrap;
     /* border: 2px solid red; */
     width: 100%;
     /* overflow: hidden; */
@@ -366,6 +370,7 @@ footer .footer-one ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid red; */
 }
 footer .footer-one ul li div {
     width: max-content;
