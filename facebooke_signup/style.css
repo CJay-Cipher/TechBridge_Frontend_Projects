@@ -1,6 +1,7 @@
 :root {
     --main-font-size: 15px;
     --main-gap: 12px;
+    --form-width: 432px;
 }
 
 * {
@@ -28,13 +29,13 @@ body {
 }
 
 .logo img {
-    height: 95px;
-    /* width: 65px; */
+    width: 100%;
+    max-width: 300px;
 }
 
 form {
-    max-width: 432px;
-    margin: 0 auto;
+    max-width: var(--form-width);
+    margin-bottom: 10vh;
     border-radius: 8px;
     box-shadow: 2px 2px 15px #c8c8c8;
     background-color: #fff;
@@ -62,6 +63,27 @@ main {
     padding: 15px;
 }
 
+.name-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+}
+
+#fname,
+#lname {
+    flex: 1;
+    padding: 13px;
+    min-width: calc(var(--form-width) / 2.5);
+    border: 1px solid #ccd0d5;
+    border-radius: 7px;
+}
+
+::placeholder {
+    font-size: var(--main-font-size);
+    color: #8d949e;
+}
+
 .input-label {
     margin: 15px 0 5px 0;
     color: #606770;
@@ -77,27 +99,9 @@ main {
     transform: translateY(1px);
 }
 
-.name-details {
-    display: flex;
-    gap: var(--main-gap);
-}
-
-#fname,
-#lname {
-    flex: 1;
-    padding: 13px;
-    border: 1px solid #ccd0d5;
-    border-radius: 7px;
-}
-
-::placeholder {
-    font-size: var(--main-font-size);
-    color: #8d949e;
-}
-
 .select-input {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--main-gap);
 }
 
@@ -121,6 +125,7 @@ select.input-design option {
 
 .login-details {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     margin-top: 15px;
