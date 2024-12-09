@@ -1,6 +1,6 @@
 # Facebook Login Project
 
-![Facebook Login](src/facebook_login.png)
+![Facebook Login](src/facebook_login.jpg)
 
 ## Overview
 
