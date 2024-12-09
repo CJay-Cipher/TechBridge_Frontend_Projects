@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 2px solid #000; */
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 0 10px;
+    transform: translateY(-50px);
+    /* border: 2px solid #000; */
+}
+
+.left-side img {
+    width: 250px;
+    transform: translateX(-25px);
+}
+
+.left-side p {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+form {
+    width: 300px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 13px #c2c2c2;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 12px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid #6666fa;
+}
+
+form a {
+    text-decoration: none;
+}
+
+form button {
+    padding: 12px 0;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .login-btn {
+    background-color: #2f2fff;
+}
+form .login-btn:hover {
+    background-color: #1a1ac1;
+}
+form a {
+    margin: 0 auto;
+}
+
+form .create-btn {
+    max-width: 70%;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #32cd32;
+    border-radius: 5px;
+}
+form .create-btn:hover {
+    background-color: #149d14;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-side > p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.right-side span {
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 0 20%;
+    }
+    .left-side img {
+        width: 200px;
+        transform: translateX(-20px);
+    }
+
+    .left-side p {
+        font-size: 14px;
+    }
+    form {
+        width: 280px;
+    }
+    .right-side > p {
+        width: 70%;
+    }
+}
